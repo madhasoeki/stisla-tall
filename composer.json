@@ -32,10 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
-            "Stisla\\TALL\\": "src/",
-            "Database\\Factories\\": "database/factories/",
-            "Database\\Seeders\\": "database/seeders/"
+            "Stisla\\TALL\\": "src/"
         }
     },
     "autoload-dev": {
