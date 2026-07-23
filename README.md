@@ -35,7 +35,7 @@ Sebelum menggunakan paket Stisla TALL Stack, pastikan proyek Laravel Anda memenu
 Pasang paket via Composer dan jalankan installer otomatis Stisla:
 
 ```bash
-composer require stisla/tall
+composer require madhasoeki/stisla
 
 php artisan stisla:install
 ```

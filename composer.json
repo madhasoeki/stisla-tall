@@ -1,6 +1,6 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "stisla/tall",
+    "name": "madhasoeki/stisla",
     "type": "library",
     "description": "Stisla UI Components for Laravel TALL Stack (TailwindCSS v4, Alpine.js, Livewire v4)",
     "keywords": [
