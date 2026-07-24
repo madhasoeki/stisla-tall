@@ -4,7 +4,7 @@ namespace Stisla\TALL\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Process\ProcessResult;
+use Livewire\Livewire;
 use Symfony\Component\Process\Process;
 
 class StislaInstallCommand extends Command
@@ -49,7 +49,7 @@ class StislaInstallCommand extends Command
      */
     protected function ensureLivewireIsInstalled(): void
     {
-        if (class_exists(\Livewire\Livewire::class)) {
+        if (class_exists(Livewire::class)) {
             $this->components->info('Livewire is already installed. Skipping Livewire installation.');
 
             return;

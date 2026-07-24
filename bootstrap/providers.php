@@ -1,6 +1,9 @@
 <?php
 
+use App\Providers\AppServiceProvider;
+use Stisla\TALL\StislaServiceProvider;
+
 return [
-    App\Providers\AppServiceProvider::class,
-    Stisla\TALL\StislaServiceProvider::class,
+    AppServiceProvider::class,
+    StislaServiceProvider::class,
 ];

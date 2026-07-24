@@ -4,6 +4,7 @@ namespace Stisla\TALL;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\View\Compilers\ComponentTagCompiler;
 use Stisla\TALL\Commands\StislaInstallCommand;
 
 class StislaServiceProvider extends ServiceProvider
@@ -40,7 +41,7 @@ class StislaServiceProvider extends ServiceProvider
         Blade::extend(function (string $value, $compiler): string {
             $value = preg_replace('/<(\/)?stisla::/', '<$1x-stisla::', $value);
 
-            return (new \Illuminate\View\Compilers\ComponentTagCompiler(
+            return (new ComponentTagCompiler(
                 $compiler->getClassComponentAliases(),
                 $compiler->getCustomDirectives(),
                 $compiler
